@@ -90,8 +90,8 @@ function changeMode() {
   
    if(document.querySelector('input[name="mode-check"]').checked) {
       document.body.style = "background-color: rgb(255,255,255); color:rgb(0,0,0);"
-      document.querySelector('.hero_wrap').style = "background-color: rgba(255,255,255,0.4);"
-      document.querySelector('.faq_ul').style = "color: rgb(255,255,255);"
+      document.querySelector('.hero_wrap').style = "background-color: rgba(255,255,255,0.4);  "
+      document.querySelector('.faq_ul').style = "color: rgb(255,255,255);  "
 
       document.querySelector('.tv_right img').src = "img/tv_trans.png"
 
