@@ -1,6 +1,7 @@
+var imgNumPrev = 0;
 function changeBg() {
 
-var imgNumPrev = 0;
+
 var imgNum = Math.floor(Math.random() * 10);
 
 // if (imgNum == imgNumPrev) {
@@ -15,7 +16,7 @@ while ( imgNum == imgNumPrev ) {
     break;
 }
 
-document.getElementById('hero_bg').style = "background-image: url(../img/poster_" + imgNum + ".jpg); "
+document.getElementById('hero_bg').style = "background-image: url(img/poster_" + imgNum + ".jpg); "
 
 document.getElementById('hero_bg').classList.remove('effect_fade_in');
 void document.getElementById('hero_bg').offsetWidth; //undefined로 바꿔버림
@@ -107,7 +108,7 @@ function changeMode() {
    else {
       document.body.style = "background-color: rgb(0,0,0); color:rgb(255,255,255);"
       document.querySelector('.hero_wrap').style = "background-color: rgba(0,0,0,0.6);"
-      document.querySelector('.tv_right img').src = "img/tv.png"
+      document.querySelector('.tv_right img').src = "img/tv_dark.png"
 
       for (let i=0; i<15; i++) {
          document.querySelectorAll('.footer_menu_li > a')[i].style = "color:rgb(255,255,255);"
